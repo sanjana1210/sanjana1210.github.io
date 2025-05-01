@@ -1,130 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sanjana Mishra Portfolio</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <script
-    src="https://kit.fontawesome.com/a076d05399.js"
-    crossorigin="anonymous"
-  ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjana Mishra | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      background: linear-gradient(135deg, #ffe5ec, #ffc2d1);
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333333;
     }
-
-    .navbar {
-      background-color: #ff6f91;
+    body {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      background: #f5f5f5;
     }
-
-    .nav-link {
-      font-weight: bold;
-      color: white !important;
+    nav {
+      background: #111;
+      color: white;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
     }
-
-    .hero {
-      padding: 60px 0;
-      min-height: 90vh;
+    nav h2 {
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #00d8ff;
+    }
+    .main {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+    .profile {
       display: flex;
       align-items: center;
+      gap: 40px;
     }
-
-    .profile-img {
-      max-width: 100%;
+    .profile img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
-
-    .profile-img:hover {
-      transform: scale(1.05);
+    .details h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-
-    .role-badge {
+    .details h3 {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .details p {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .buttons a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 8px 16px;
-      background-color: #ff6f91;
+      margin-right: 15px;
+      padding: 10px 20px;
+      background: #00d8ff;
       color: white;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 16px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .resume-btn {
-      margin-top: 30px;
-      padding: 12px 28px;
-      font-size: 18px;
-      background-color: #ff6f91;
-      color: white;
-      border: none;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-    }
-
-    .resume-btn:hover {
-      background-color: #e85a7c;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-      font-size: 3rem;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
     }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.7;
+    .buttons a:hover {
+      background: #00b3d6;
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold text-white" href="#">My Portfolio</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="experience.html">Work Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="internships.html">Internships</a></li>
-        </ul>
-      </div>
-    </div>
+  <nav>
+    <h2>Sanjana</h2>
+    <a href="#about">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="experience.html">Work Experience</a>
+    <a href="internships.html">Internships</a>
+    <a href="https://www.linkedin.com/in/sanjanamishra121/" target="_blank">LinkedIn</a>
   </nav>
-
-  <!-- Hero Section -->
-  <div class="container hero">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center mb-4 mb-md-0">
-        <img src="image.jpg" alt="Your Image" class="profile-img" width="250" />
-        <div class="role-badge">DATA ANALYST</div>
+  <div class="main">
+    <section class="profile" id="about">
+      <img src="image.jpg" alt="Sanjana Mishra">
+      <div class="details">
+        <h1>Sanjana Mishra</h1>
+        <h3>Data Analyst</h3>
+        <p>Data Analyst with 2+ years of experience in data analysis, visualization, and business intelligence. Proficient in SQL, Python, Excel, and Power BI, with a strong foundation in data modeling, ETL, and automation. Skilled at extracting, transforming, and analyzing complex datasets to derive meaningful business insights. Strong communication skills with the ability to present insights clearly through interactive dashboards and reports. Adept at collaborating with cross-functional teams, optimizing data pipelines, and translating technical findings into actionable business strategies. Passionate about leveraging AI-driven analytics to drive data-driven decision-making.</p>
+        <div class="buttons">
+          <a href="resume.pdf" target="_blank">View Resume</a>
+        </div>
       </div>
-      <div class="col-md-7">
-        <h1>SANJANA MISHRA</h1>
-        <p>
-          Data Analyst with 2+ years of experience in data analysis, visualization, and business intelligence.
-          Proficient in SQL, Python, Excel, and Power BI, with a strong foundation in data modeling, ETL, and automation.
-          Skilled at extracting, transforming, and analyzing complex datasets to derive meaningful business insights.
-          Strong communication skills with the ability to present insights clearly through interactive dashboards and reports.
-          Adept at collaborating with cross-functional teams, optimizing data pipelines, and translating technical findings into actionable business strategies.
-          Passionate about leveraging AI-driven analytics to drive data-driven decision-making.
-        </p>
-        <a href="resume.pdf" class="resume-btn" target="_blank">
-          <i class="fas fa-file-alt"></i> View Resume
-        </a>
-      </div>
-    </div>
+    </section>
   </div>
 </body>
 </html>
