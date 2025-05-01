@@ -7,7 +7,7 @@
     <style>
         /* Global Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #2d3e50, #4f6d7a);
@@ -17,10 +17,7 @@
         /* Container Styling */
         .container {
             display: flex;
-            flex-direction: row;
             min-height: 100vh;
-            align-items: center;
-            justify-content: center;
         }
 
         /* Sidebar Styling */
@@ -32,6 +29,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            height: 100vh;
         }
 
         .sidebar h2 {
@@ -46,7 +44,6 @@
             text-decoration: none;
             font-size: 18px;
             margin: 10px 0;
-            text-align: center;
             padding: 10px;
             width: 100%;
             text-align: center;
@@ -61,7 +58,7 @@
         /* Main Content Styling */
         .main-content {
             flex: 1;
-            padding: 20px;
+            padding: 40px;
             max-width: 1000px;
             background-color: #fff;
             color: #34495e;
@@ -72,7 +69,6 @@
         /* Header Section */
         .header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
         }
@@ -81,6 +77,7 @@
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-right: 30px;
         }
 
         .header h1 {
@@ -91,8 +88,15 @@
 
         .header p {
             font-size: 16px;
-            color: #7f8c8d;
+            color: #333;
             line-height: 1.6;
+            margin-top: 10px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .header p a {
+            color: #3498db;
+            text-decoration: none;
         }
 
         /* View Resume Button */
@@ -107,6 +111,7 @@
             transition: background-color 0.3s ease;
             text-align: center;
             display: inline-block;
+            margin-top: 20px;
         }
 
         .view-resume:hover {
@@ -144,8 +149,10 @@
                 <img src="image.jpg" alt="Sanjana Mishra">
                 <div>
                     <h1>Sanjana Mishra</h1>
-                    <p>Data Analyst with 2+ years of experience in data analysis, visualization, and business intelligence. Proficient in SQL, Python, Excel, and Power BI, with a strong foundation in data modeling, ETL, and automation. Skilled at extracting, transforming, and analyzing complex datasets to derive meaningful business insights. Strong communication skills with the ability to present insights clearly through interactive dashboards and reports. Adept at collaborating with cross-functional teams, optimizing data pipelines, and translating technical findings into actionable business strategies. Passionate about leveraging AI-driven analytics to drive data-driven decision-making.</p>
-                    <p><a href="https://www.linkedin.com/in/sanjanamishra121/" target="_blank">Connect on LinkedIn</a></p>
+                    <p><strong>Data Analyst | 2+ years experience</strong></p>
+                    <p>I am a highly motivated Data Analyst with over 2 years of experience specializing in data analysis, visualization, and business intelligence. I am proficient in SQL, Python, Excel, and Power BI. I have a deep understanding of data modeling, ETL processes, and automation.</p>
+                    <p>My expertise lies in extracting, transforming, and analyzing large datasets to derive actionable insights. I excel in creating interactive dashboards, reports, and visualizations to help businesses make data-driven decisions. I'm skilled at collaborating with cross-functional teams to implement AI-driven analytics and optimize data pipelines.</p>
+                    <p>Let's connect: <a href="https://www.linkedin.com/in/sanjanamishra121/" target="_blank">LinkedIn</a></p>
                     <button class="view-resume">View Resume</button>
                 </div>
             </div>
