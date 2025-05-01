@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjana Mishra | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      display: flex;
-      height: 100vh;
-      overflow: hidden;
-      background: #f5f5f5;
-    }
-    nav {
-      background: #111;
-      color: white;
-      width: 250px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 40px;
-    }
-    nav h2 {
-      margin-bottom: 30px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      color: #00d8ff;
-    }
-    .main {
-      flex: 1;
-      padding: 40px;
-      overflow-y: auto;
-    }
-    .profile {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-    .profile img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    .details h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .details h3 {
-      color: #555;
-      margin-bottom: 20px;
-    }
-    .details p {
-      font-size: 1em;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin-right: 15px;
-      padding: 10px 20px;
-      background: #00d8ff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .buttons a:hover {
-      background: #00b3d6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana Mishra - Data Analyst Portfolio</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        /* Container Styling */
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Header and About Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        /* View Resume Button */
+        .view-resume {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-resume:hover {
+            background-color: #bdc3c7;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+    </style>
 </head>
 <body>
-  <nav>
-    <h2>Sanjana</h2>
-    <a href="#about">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="certifications.html">Certifications</a>
-    <a href="experience.html">Work Experience</a>
-    <a href="internships.html">Internships</a>
-    <a href="https://www.linkedin.com/in/sanjanamishra121/" target="_blank">LinkedIn</a>
-  </nav>
-  <div class="main">
-    <section class="profile" id="about">
-      <img src="image.jpg" alt="Sanjana Mishra">
-      <div class="details">
-        <h1>Sanjana Mishra</h1>
-        <h3>Data Analyst</h3>
-        <p>Data Analyst with 2+ years of experience in data analysis, visualization, and business intelligence. Proficient in SQL, Python, Excel, and Power BI, with a strong foundation in data modeling, ETL, and automation. Skilled at extracting, transforming, and analyzing complex datasets to derive meaningful business insights. Strong communication skills with the ability to present insights clearly through interactive dashboards and reports. Adept at collaborating with cross-functional teams, optimizing data pipelines, and translating technical findings into actionable business strategies. Passionate about leveraging AI-driven analytics to drive data-driven decision-making.</p>
-        <div class="buttons">
-          <a href="resume.pdf" target="_blank">View Resume</a>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Sanjana Mishra</h2>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="work-experience.html">Work Experience</a>
+            <a href="internships.html">Internships</a>
         </div>
-      </div>
-    </section>
-  </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header Section -->
+            <div class="header">
+                <img src="image.jpg" alt="Sanjana Mishra">
+                <div>
+                    <h1>Sanjana Mishra</h1>
+                    <p>Data Analyst with 2+ years of experience in data analysis, visualization, and business intelligence. Proficient in SQL, Python, Excel, and Power BI, with a strong foundation in data modeling, ETL, and automation. Skilled at extracting, transforming, and analyzing complex datasets to derive meaningful business insights. Strong communication skills with the ability to present insights clearly through interactive dashboards and reports. Adept at collaborating with cross-functional teams, optimizing data pipelines, and translating technical findings into actionable business strategies. Passionate about leveraging AI-driven analytics to drive data-driven decision-making.</p>
+                    <p><a href="https://www.linkedin.com/in/sanjanamishra121/" target="_blank">Connect on LinkedIn</a></p>
+                    <button class="view-resume">View Resume</button>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="footer">
+                <p>&copy; 2025 Sanjana Mishra</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
